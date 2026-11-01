@@ -1,0 +1,38 @@
+{
+  "name": "genpark-personal-agent-cardiac-baroreflex-sensitivity-brs-skill",
+  "version": "1.0.0",
+  "description": "Sequence-method Baroreflex Sensitivity (BRS, ms/mmHg) & cardiac autonomic vagal tone failure sentinel.",
+  "category": "personal_agent",
+  "author": "GenPark AI",
+  "website": "https://www.genpark.ai",
+  "linkedin": "https://www.linkedin.com/company/92955550",
+  "main": "skills.py",
+  "tools": [
+    {
+      "name": "assess_cardiac_baroreflex_sensitivity",
+      "description": "Sequence-method Baroreflex Sensitivity (BRS, ms/mmHg) & cardiac autonomic vagal tone failure sentinel.",
+      "sample_input": {
+        "beat_sequences": [
+          {
+            "delta_rr_ms": 32.0,
+            "delta_sbp_mmhg": 2.5
+          },
+          {
+            "delta_rr_ms": 45.0,
+            "delta_sbp_mmhg": 3.8
+          },
+          {
+            "delta_rr_ms": 28.0,
+            "delta_sbp_mmhg": 2.1
+          },
+          {
+            "delta_rr_ms": 38.0,
+            "delta_sbp_mmhg": 3.0
+          }
+        ],
+        "resting_sbp_mmhg": 118,
+        "resting_hr_bpm": 62
+      }
+    }
+  ]
+}
